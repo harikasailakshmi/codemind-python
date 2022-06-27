@@ -30,4 +30,4 @@ else:
     if d-n>=n-e:
         print(n-e)
     else:
-        print(d-n) 
+        print(d-n)
