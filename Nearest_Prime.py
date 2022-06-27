@@ -17,10 +17,11 @@ while k:
     e=n-1
     if n>3 and np(n)==1:
         print(n)
-    elif n==1 or n==0:
-        print('2')
-    elif n==2:
-        print('3')
+    elif n<3:
+        if np(d)==1:
+            print(d)
+        else:
+            d+=1
     else:
         while a:
             if np(d)==1 and np(e)==1:
