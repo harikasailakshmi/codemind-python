@@ -1,22 +1,16 @@
-x=int(input())
-temp=x
-c=0
-k=0
-s=0
-for i in range(1,x+1):
-    if x%i==0:
-        c+=1
-    if c==2:
-        while temp>0:
-            d=temp%10
-            temp=temp//10
-            k=k*10+d
-        for j in range(1,k+1):
-            if k%j==0:
-                s+=1
-if s==2 and c==2:
+def prime(a):
+    if a==0 or a==1:
+        return 0
+    for i in range (2,a):
+        if a%i==0:
+            return 0
+    return 1
+n=input()
+k=int(n)
+r=int(n[::-1])
+if prime(k)==1 and prime(r)==1 :
     print("circular prime")
-elif s==2 or c==2:
-    print("prime but not a circular prime")
-else:
+elif prime(k)!=1:
     print("not prime")
+else:
+    print("prime but not a circular prime")
