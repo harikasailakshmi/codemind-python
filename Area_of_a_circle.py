@@ -1,3 +1,1 @@
-r=int(input())
-area=3.14*r*r
-print("%.2f"%area)
+print(((float(input()))**2)*3.14)
