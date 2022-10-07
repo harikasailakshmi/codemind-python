@@ -1,10 +1,10 @@
-x=int(input())
-k=0
-while x!=0:
-    d=x%10
-    x=x//10
-    k=k+d
-    if k>9 and x==0:
-        x=k
-        k=0
-print(k)
+a=input()
+z=int(a)
+while z>9:
+    b=list(map(int,a.strip("")))
+    if sum(b)>9:
+        a=str(sum(b))
+    else:
+        print(sum(b))
+        break
+    
