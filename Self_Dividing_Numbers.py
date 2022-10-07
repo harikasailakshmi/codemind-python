@@ -1,11 +1,17 @@
-x=int(input())
-y=int(input())
-for i in range(x,y+1):
-    temp=i
-    while temp!=0:
-        d=temp%10
-        if d==0 or i%d!=0:
+a=int(input())
+b=int(input())
+for i in range(a,b+1):
+    g=str(i)
+    c=list(map(int,g.strip("")))
+    for j in c:
+        if j != 0 :
+            if i%j==0:
+                c=1
+            else:
+                c=0
+                break
+        else:
+            c=0
             break
-        temp=temp//10
-    if temp==0:
+    if c==1:
         print(i,end=" ")
