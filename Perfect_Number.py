@@ -1,10 +1,7 @@
-x=int(input())
-temp=x
-k=0
-for i in range(1,x):
-    if x%i==0:
-        k=k+i
-if temp==k:
-    print("True")
-else:
-    print("False")
+a=int(input())
+c=0
+for i in range(1,a):
+    if a%i==0:
+        c+=i
+j=(a==c)
+print(j if "True" else "False")
