@@ -1,4 +1,4 @@
 a=int(input())
 for i in range(a):
-    n,m=map(int,input().split())
-    print(n+m)
+    x,y=map(int,input().split())
+    print(x+y)
