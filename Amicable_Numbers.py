@@ -1,14 +1,12 @@
-x=int(input())
-y=int(input())
-s=0
-k=0
-for i in range(1,x):
-    if(x%i==0):
-        s=s+i
-for j in range(1,y):
-    if y%j==0:
-        k=k+j
-if k==x and s==y:
+def sod(a):
+    su=0
+    for i in range(1,a):
+        if a%i==0:
+            su+=i
+    return su
+a=int(input())
+b=int(input())
+if sod(a)==b and sod(b)==a:
     print("Amicable")
 else:
     print("Not Amicable")
