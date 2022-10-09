@@ -1,16 +1,25 @@
 def prime(a):
-    if a==0 or a==1:
-        return 0
-    for i in range (2,a):
+    c=0
+    for i in range(1,a+1):
         if a%i==0:
-            return 0
-    return 1
-n=input()
-k=int(n)
-r=int(n[::-1])
-if prime(k)==1 and prime(r)==1 :
-    print("circular prime")
-elif prime(k)!=1:
-    print("not prime")
+            c+=1
+    if c==2:
+        return 1
+    else:
+        return 0
+def rev(a):
+    su=0
+    while a>0:
+        rem=a%10
+        su=(su*10)+rem
+        a//=10
+    return su
+a=int(input())
+arev=rev(a)
+if prime(a)==1:
+    if prime(arev)==1:
+        print("circular prime")
+    else:
+        print("prime but not a circular prime")
 else:
-    print("prime but not a circular prime")
+    print("not prime")
