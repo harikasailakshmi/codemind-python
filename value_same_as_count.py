@@ -12,4 +12,3 @@ for i in range(0,n):
     if a[i]==c and a[i]!=1000:
         zap+=1 
 print(zap)
-        
