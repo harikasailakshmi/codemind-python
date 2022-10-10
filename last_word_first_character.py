@@ -1,3 +1,2 @@
-s=input()
-arr=list(s.split())
-print(arr[len(arr)-1][0])
+b=input().split()
+print(b[len(b)-1][0])
