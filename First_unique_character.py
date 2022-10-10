@@ -1,13 +1,19 @@
-x=input()
-z=0
-for i in x:
+a=input()
+ind=''
+c=co=0
+for i in range(len(a)):
     c=0
-    for j in x:
-        if i==j:
-            c+=1
-    if(c==1):
-        z+=1
-        print(i)
+    for j in range(len(a)):
+        if i!=j:
+            if a[i]==a[j]:
+                c+=1
+    if c!=0:
+        continue
+    else:
+        ind=a[i]
+        co+=1
         break
-if(z==0):
-    print("-1")
+if co==0:
+    print(-1)
+else:
+    print(ind)
