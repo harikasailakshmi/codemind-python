@@ -9,4 +9,3 @@ for i in range (0,n):
                 a[j]=1000
     if c==0 and a[i]!=1000:
         print(a[i],end=" ")
-
