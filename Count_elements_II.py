@@ -1,14 +1,9 @@
-x,y=map(int,input().split())
-l=list(map(int,input().split()))
-m=list(map(int,input().split()))
-l=set(l)
-m=set(m)
-c=0
-for i in m:
-    if i not in l:
-        c+=1
-for i in l:
-    if i not in m:
-        c+=1
-print(c)
-    
+a,b=map(int,input().split())
+x=list(map(int,input().split()))
+y=list(map(int,input().split()))
+c=set(x+y)
+d=0
+for i in c:
+    if (i in x and i not in y) or (i not in x and i in y):
+        d+=1
+print(d)
