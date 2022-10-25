@@ -1,8 +1,5 @@
-a=int(input())
-x=list(map(int,input().split()))
-z=[]
-for i in range(0,a-1,2):
-    for j in range(x[i+1]):
-        z.append(x[i])
-print(*z)
-        
+n=int(input())
+arr=list(map(int,input().strip().split()))
+for i in range(1,n,2):
+    for j in range(arr[i]):
+        print(arr[i-1],end=" ")
